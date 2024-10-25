@@ -8,7 +8,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.get("/api", (req, res) => {
-  res.json({ fruits: ["apple", "avocado", "tomato", "banana"] });
+  res.json({ currencies: ['USD', 'EUR', 'GBP', 'JPY', 'AUD'] });
 });
 
 app.listen(8080, () => {
